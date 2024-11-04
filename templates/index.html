@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine UI</h1>
+        
+        <h2>Create Rule</h2>
+        <form action="{{ url_for('create_rule_route') }}" method="post">
+            <label for="rule_name">Rule Name:</label>
+            <input type="text" id="rule_name" name="rule_name" required>
+            
+            <label for="rule_string">Rule String:</label>
+            <textarea id="rule_string" name="rule_string" required></textarea>
+            
+            <button type="submit">Create Rule</button>
+        </form>
+
+        <h2>Evaluate Rule</h2>
+        <form action="{{ url_for('evaluate_rule_route') }}" method="post">
+            <label for="eval_rule_name">Rule Name:</label>
+            <input type="text" id="eval_rule_name" name="eval_rule_name" required>
+            
+            <label for="json_data">JSON Data:</label>
+            <textarea id="json_data" name="json_data" required></textarea>
+            
+            <button type="submit">Evaluate Rule</button>
+        </form>
+
+        <h2>Combine Rules</h2>
+        <form action="{{ url_for('combine_rules_route') }}" method="post">
+            <label for="rule_names">Rule Names (comma-separated):</label>
+            <input type="text" id="rule_names" name="rule_names" required>
+    
+            <label for="new_rule_name">New Rule Name:</label>
+            <input type="text" id="new_rule_name" name="new_rule_name" required>
+    
+    <button type="submit">Combine Rules</button>
+</form>
+
+
+        {% if message %}
+        <div class="message {% if error %}error{% else %}success{% endif %}">
+            {{ message }}
+        </div>
+        {% endif %}
+
+        {% if result is not none %}
+        <div class="result">
+            <h3>Evaluation Result:</h3>
+            <p>{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
