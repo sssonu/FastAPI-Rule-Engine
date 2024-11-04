@@ -15,6 +15,10 @@ using an Abstract Syntax Tree (AST) to represent conditional rules.
    ![Evaluate rule](https://github.com/user-attachments/assets/3fabd085-329a-4e54-b0f8-0a00644f0faa)
 
 4) Combine rule
+
+
+   ![Combined rule](https://github.com/user-attachments/assets/f8453ded-af5a-49ab-8188-3dbde4678a93)
+
    
 
 
