@@ -3,8 +3,21 @@ A simple 3-tier rule engine application built with Flask that determines user el
 using an Abstract Syntax Tree (AST) to represent conditional rules.
 
 #### Snapshots
-
+1) UI
 ![User Interface](https://github.com/user-attachments/assets/ddd2a943-78d0-4947-85a2-3e3d461ec0f1)
+
+2) Rule Creation
+
+   ![Rule Creation](https://github.com/user-attachments/assets/80bc258e-2a80-4776-a369-94591f90b18d)
+
+3) Evaluate Rule
+
+   ![Evaluate rule](https://github.com/user-attachments/assets/3fabd085-329a-4e54-b0f8-0a00644f0faa)
+
+4) Combine rule
+   
+
+
 
 
 #### Features
