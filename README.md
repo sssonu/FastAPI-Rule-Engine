@@ -2,6 +2,11 @@
 A simple 3-tier rule engine application built with Flask that determines user eligibility based on attributes
 using an Abstract Syntax Tree (AST) to represent conditional rules.
 
+#### Snapshots
+
+![User Interface](https://github.com/user-attachments/assets/ddd2a943-78d0-4947-85a2-3e3d461ec0f1)
+
+
 #### Features
 1) Create ,Evaluate and Combine eligibility rules.
 2) Use of Abstract Syntax Tree (AST) for rule representation.
