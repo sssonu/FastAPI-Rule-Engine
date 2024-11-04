@@ -16,8 +16,8 @@ using an Abstract Syntax Tree (AST) to represent conditional rules.
 
 4) Combine rule
 
+![Combined rule](https://github.com/user-attachments/assets/22b3aec2-ad45-4316-900b-78536a087e3f)
 
-   ![Combined rule](https://github.com/user-attachments/assets/f8453ded-af5a-49ab-8188-3dbde4678a93)
 
    
 
